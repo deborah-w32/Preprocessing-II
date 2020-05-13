@@ -177,6 +177,7 @@ header {
 }
 @media (max-width: 500px) {
   header {
+    margin-top: 5%;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -229,18 +230,17 @@ header div {
 @media (max-width: 500px) {
   .home .content-section {
     display: flex;
-    flex-flow: row wrap;
-    align-content: center;
+    flex-flow: column-reverse wrap;
     margin-left: 5%;
   }
 }
 .home .content-section .text-content {
   width: 48%;
-  padding-right: 1%;
+  padding-left: 1%;
 }
 @media (max-width: 500px) {
-  .home .content-section {
-    width: 90%;
+  .home .content-section .text-content {
+    width: 100%;
   }
 }
 .home .content-section .img-content {
@@ -249,11 +249,20 @@ header div {
 }
 @media (max-width: 500px) {
   .home .content-section .img-content {
-    width: 90%;
+    width: 100%;
   }
 }
 .home .content-section img {
   border-radius: 10px;
+}
+.banner {
+  margin: 0 20%;
+}
+@media (max-width: 500px) {
+  .banner {
+    width: 85%;
+    margin: 0 5%;
+  }
 }
 .inverse-content {
   padding-bottom: 30px;
@@ -273,7 +282,8 @@ header div {
 }
 @media (max-width: 500px) {
   .content-destination {
-    width: 100%;
+    width: 90%;
+    margin: 5%;
   }
 }
 .content-destination img {
@@ -282,6 +292,7 @@ header div {
 .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  display: flex;
   justify-content: space-between;
 }
 .content-pick .destination {
@@ -290,10 +301,11 @@ header div {
 }
 @media (max-width: 500px) {
   .content-pick .destination {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 10%;
   }
 }
 .content-pick .destination .btn {
