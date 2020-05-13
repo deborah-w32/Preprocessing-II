@@ -177,6 +177,13 @@ header {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
 header nav {
   width: 70%;
   display: flex;
@@ -199,7 +206,7 @@ header div {
 }
 .footer p {
   text-align: center;
-  color: #212529;
+  color: white;
   font-size: 1.6rem;
   padding: 20px;
 }
@@ -235,9 +242,20 @@ header div {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+  /*.destination{}*/
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+.home .content-destination .btn {
+  background-color: #008080;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
 }
 .home .content-pick {
   padding-top: 30px;
