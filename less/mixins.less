@@ -1,18 +1,20 @@
 // Mixins in here
 
-.center() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.custom-btn(@bg-color:#008080, @width:200px, @font-color:white){
-    background-color: @bg-color;
+
+.custom-btn(@btn-color:#008080, @width:200px, @btn-font-color:white){
+    display: block;
+    background-color: @btn-color;
     margin: 0 10px 20px;
     cursor: pointer;
     width: @width;
     height: 45px;
     font-size: 2rem;
     border-radius: 10px;
-    color:@font-color;
+    color:@btn-font-color;
+    
+    &:hover{
+      background-color:@btn-font-color;
+      color:@btn-color;
+    }
 }

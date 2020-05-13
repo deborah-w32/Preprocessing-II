@@ -1,8 +1,6 @@
 // Navigation Styles here
 header{
-    max-width: 800px;
     width: 100%;
-    margin: 0 auto;
     padding-bottom: 10px;
     border-bottom: 2px dashed silver;
     display: flex;
@@ -19,6 +17,11 @@ header{
         display: flex;
         justify-content: space-between;
         padding: 12px;
+        margin-right: 20%;
+
+        @media @mobile{
+            margin-left: 15%;
+        }
     }
     
 
@@ -31,5 +34,10 @@ header{
 
     div{
         width: 30%;
+        margin-left: 20%;
+
+        @media @mobile{
+            margin-left: 35%;
+        }
     }
 }
